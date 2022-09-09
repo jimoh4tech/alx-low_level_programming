@@ -21,7 +21,7 @@ putchar(letter);
 
 for (; LETTER <= 'Z';)
 {
-putcahr(LETTER);
+putchar(LETTER);
 ++LETTER;
 }
 
