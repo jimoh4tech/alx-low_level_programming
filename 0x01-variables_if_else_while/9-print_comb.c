@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: A simple C program that prints comma seperated numbers from 0 to 9
+ * Description: A simple C program that prints
+ * comma seperated numbers from 0 to 9
  *
  * Return: 0
  */
