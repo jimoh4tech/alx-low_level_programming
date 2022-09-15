@@ -15,10 +15,10 @@ void print_remaining_days(int month, int day, int year)
 /**
 * leap year can be divided by 100 and 400 or 4 evenly
 */
-  
+
 if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
 {
-if (month >= 2 && day >= 60)
+if (month > 2 && day >= 60)
 {
 day++;
 }
