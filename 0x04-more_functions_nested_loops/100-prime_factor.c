@@ -16,7 +16,6 @@ for (i = 2; i < prime; i++)
 {
 if (prime % i == 0)
 {
-printf("%d, ", i);
 prime /= i;
 i--;
 }
