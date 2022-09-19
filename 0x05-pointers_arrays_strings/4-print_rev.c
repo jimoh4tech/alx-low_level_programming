@@ -1,3 +1,5 @@
+#include"main.h"
+
 /**
  * print_rev - function that prints the characters in a given address
  * in reverse

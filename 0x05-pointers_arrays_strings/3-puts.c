@@ -1,3 +1,5 @@
+#include"main.h"
+
 /**
  * _puts - function that prints the characters in a given address
  * @str: address of the character sequence
