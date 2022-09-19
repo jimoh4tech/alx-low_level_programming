@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 /**
  * print_array - funtion that prints the content of array
  * @a: address of the array
