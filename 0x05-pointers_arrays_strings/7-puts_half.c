@@ -18,7 +18,7 @@ _putchar(str[n]);
 }
 else
 {
-for (n = (len / 2) + 1; str[len]; n++)
+for (n = (len / 2) + 1; n < len; n++)
 _putchar(str[n]);
 }
 _putchar('\n');
