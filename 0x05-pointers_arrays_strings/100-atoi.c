@@ -19,5 +19,6 @@ if (s[i + 1] < '0' || s[i + 1] > '9')
 break;
 }
 }
-return (n * sign);
+n *= sign;
+return (n);
 }
