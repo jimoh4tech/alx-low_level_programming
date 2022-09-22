@@ -8,8 +8,16 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int i = strlen(n1) - 1;
-int j = strlen(n2) - 1;
+int i;
+int j;
+for (i = 0; n1[i] != '\0'; i++)
+;
+for (j = 0; n2[j] != '\0'; j++)
+;
+
+i -= 1;
+j -= 1;
+
 int c = 48;
 
 if (i >= j)
@@ -59,3 +67,4 @@ c = 49;
 }
 return (r);
 }
+
