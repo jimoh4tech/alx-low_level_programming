@@ -18,33 +18,39 @@ int main(void)
   
 {
   
-  char s1[98] = "Hello ";
+  char s[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
   
-  char s2[] = "World!\n";
-  
-  char *ptr;
+  char *p;
   
 
   
-  printf("%s\n", s1);
+  p = rot13(s);
   
-  printf("%s", s2);
+  printf("%s", p);
   
-  ptr = _strncat(s1, s2, 1);
+  printf("------------------------------------\n");
   
-  printf("%s\n", s1);
+  printf("%s", s);
   
-  printf("%s", s2);
+  printf("------------------------------------\n");
   
-  printf("%s\n", ptr);
+  p = rot13(s);
   
-  ptr = _strncat(s1, s2, 1024);
+  printf("%s", p);
   
-  printf("%s", s1);
+  printf("------------------------------------\n");
   
-  printf("%s", s2);
+  printf("%s", s);
   
-  printf("%s", ptr);
+  printf("------------------------------------\n");
+  
+  p = rot13(s);
+  
+  printf("%s", p);
+  
+  printf("------------------------------------\n");
+  
+  printf("%s", s);
   
   return (0);
   
