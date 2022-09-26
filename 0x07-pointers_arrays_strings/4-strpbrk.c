@@ -21,7 +21,7 @@ if (j < min)
 min = j;
 }
 if (min < 0)
-return (NULL);
+return ('\0');
 for (i = 0; i < min; i++)
 ++s;
 return (s);
