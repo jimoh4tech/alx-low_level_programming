@@ -7,7 +7,7 @@
 * @l: length of the string
 * @i: current index
 *
- Return: 1 if palindrome, else 0
+* Return: 1 if palindrome, else 0
 */
 
 int check_pal(char *s, int l, int i)
