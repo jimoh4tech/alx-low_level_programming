@@ -2,56 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int **alloc_grid(int, int);
-
 /**
-* print_grid - prints a grid of integers
-* @grid: the address of the two dimensional grid
-* @width: width of the grid
-* @height: height of the grid
-*
-* Return: Nothing.
-*/
-void print_grid(int **grid, int width, int height)
-{
-int w;
-int h;
-
-h = 0;
-while (h < height)
-{
-w = 0;
-while (w < width)
-{
-printf("%d ", grid[h][w]);
-w++;
-}
-printf("\n");
-h++;
-}
-}
-
-/**
-* main - check the code .
+* main - check the code for ALX School students.
 *
 * Return: Always 0.
 */
-int main(void)
+int main(int ac, char *av[])
 {
-int **grid;
-int h;
-int w;
+char *s;
 
-h = 20;
-w = 20;
-grid = alloc_grid(h, w);
-if (grid == NULL)
+s = argstostr(ac, av);
+if (s == NULL)
 {
 return (1);
 }
-print_grid(grid, h, w);
-printf("\n");
-free(grid);
+printf("%s", s);
+free(s);
 return (0);
 }
 
