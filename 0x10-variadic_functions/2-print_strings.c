@@ -13,8 +13,6 @@ unsigned int i;
 va_list strs;
 char *temp;
 
-if (n != 0)
-{
 va_start(strs, n);
 for (i = 0; i < n; i++)
 {
@@ -28,5 +26,4 @@ printf("%s", separator);
 }
 printf("\n");
 va_end(strs);
-}
 }
