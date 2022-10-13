@@ -32,8 +32,10 @@ break;
 case 's':
 str = va_arg(any, char *);
 if (str == NULL)
+{
 printf("(nil)");
-else
+break;
+}
 printf("%s", str);
 break;
 default:
