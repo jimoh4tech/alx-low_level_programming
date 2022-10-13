@@ -13,17 +13,17 @@ unsigned int i;
 va_list strs;
 char *temp;
 
-if (separator != NULL && n != 0)
+if (n != 0)
 {
 va_start(strs, n);
 for (i = 0; i < n; i++)
 {
-  temp = va_arg(strs, char *);
-  if (temp == NULL)
-    printf("(nil)");
-  else
-    printf("%s", temp);
-if (i != (n - 1))
+temp = va_arg(strs, char *);
+if (temp == NULL)
+printf("(nil)");
+else
+printf("%s", temp);
+if (separator && i != (n - 1))
 printf("%s", separator);
 }
 printf("\n");
