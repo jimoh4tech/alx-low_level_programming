@@ -9,23 +9,22 @@
 
 int main(void)
 {
+	char num = '0';
+	char letter = 'a';
 
-char num = '0';
-char letter = 'a';
+	for (; num <= '9';)
+	{
+		putchar(num);
+		++num;
+	}
 
-for (; num <= '9';)
-{
-putchar(num);
-++num;
-}
+	for (; letter <= 'f';)
+	{
+		putchar(letter);
+		++letter;
+	}
 
-for (; letter <= 'f';)
-{
-putchar(letter);
-++letter;
-}
+	putchar('\n');
 
-putchar('\n');
-
-return (0);
+	return (0);
 }

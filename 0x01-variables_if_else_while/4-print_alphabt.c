@@ -10,15 +10,15 @@
 
 int main(void)
 {
-char letter = 'a';
+	char letter = 'a';
 
-for (; letter <= 'z';)
-{
+	for (; letter <= 'z';)
+	{
 
-if (letter != 'e' && letter != 'q')
-putchar(letter);
-++letter;
-}
-putchar('\n');
-return (0);
+		if (letter != 'e' && letter != 'q')
+			putchar(letter);
+		++letter;
+	}
+	putchar('\n');
+	return (0);
 }

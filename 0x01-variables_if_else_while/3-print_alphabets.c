@@ -10,21 +10,21 @@
 
 int main(void)
 {
-char letter = 'a';
-char LETTER = 'A';
+	char letter = 'a';
+	char LETTER = 'A';
 
-for (; letter <= 'z';)
-{
-putchar(letter);
-++letter;
-}
+	for (; letter <= 'z';)
+	{
+		putchar(letter);
+		++letter;
+	}
 
-for (; LETTER <= 'Z';)
-{
-putchar(LETTER);
-++LETTER;
-}
+	for (; LETTER <= 'Z';)
+	{
+		putchar(LETTER);
+		++LETTER;
+	}
 
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }

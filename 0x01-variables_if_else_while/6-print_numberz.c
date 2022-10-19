@@ -11,17 +11,13 @@
 int main(void)
 
 {
-int num = 0;
-for (; num <= 9; num++)
+	int num = 0;
 
-{
+	for (; num <= 9; num++)
+		putchar(num + '0');
 
-putchar(num + '0');
+	putchar('\n');
 
-}
-
-putchar('\n');
-
-return (0);
+	return (0);
 
 }

@@ -10,13 +10,13 @@
 
 int main(void)
 {
-char letter = 'a';
+	char letter = 'a';
 
-for (; letter <= 'z';)
-{
-putchar(letter);
-++letter;
-}
-putchar('\n');
-return (0);
+	for (; letter <= 'z';)
+	{
+		putchar(letter);
+		++letter;
+	}
+	putchar('\n');
+	return (0);
 }

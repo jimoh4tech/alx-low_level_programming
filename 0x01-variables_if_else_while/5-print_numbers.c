@@ -10,14 +10,14 @@
 int main(void)
 {
 
-char num = '0';
+	char num = '0';
 
-for (; num <= '9';)
-{
-putchar(num);
-++num;
-}
-putchar('\n');
+	for (; num <= '9';)
+	{
+		putchar(num);
+		++num;
+	}
+	putchar('\n');
 
-return (0);
+	return (0);
 }

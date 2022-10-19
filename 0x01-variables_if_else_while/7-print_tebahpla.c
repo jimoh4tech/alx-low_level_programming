@@ -12,16 +12,15 @@ int main(void)
 
 {
 
-char ch = 'z';
+	char ch = 'z';
 
-while (ch >= 'a')
-{
-putchar(ch);
---ch;
-}
+	while (ch >= 'a')
+	{
+		putchar(ch);
+		--ch;
+	}
+	putchar('\n');
 
-putchar('\n');
-
-return (0);
+	return (0);
 
 }
