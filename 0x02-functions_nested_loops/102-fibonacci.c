@@ -10,17 +10,19 @@
 
 int main(void)
 {
-int c = 1;
-unsigned long f = 1, s = 2, temp = 0;
-printf("%lu, %lu", f, s);
-do {
-printf(", ");
-temp = s;
-s += f;
-printf("%lu", s);
-f = temp;
-c++;
-} while (c < 49);
-printf("\n");
-return (0);
+	int c = 1;
+	unsigned long f = 1, s = 2, temp = 0;
+
+	printf("%lu, %lu", f, s);
+	do {
+		printf(", ");
+		temp = s;
+		s += f;
+		printf("%lu", s);
+		f = temp;
+		c++;
+	} while (c < 49);
+
+	printf("\n");
+	return (0);
 }

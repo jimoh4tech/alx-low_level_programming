@@ -11,14 +11,14 @@
 
 int main(void)
 {
-int num, total = 0;
+	int num, total = 0;
 
-for (num = 1; num < 1024; num++)
-{
-if ((num % 3 == 0) || (num % 5 == 0))
-total += num;
-}
-printf("%d\n", total);
+	for (num = 1; num < 1024; num++)
+	{
+		if ((num % 3 == 0) || (num % 5 == 0))
+			total += num;
+	}
+	printf("%d\n", total);
 
-return (0);
+	return (0);
 }

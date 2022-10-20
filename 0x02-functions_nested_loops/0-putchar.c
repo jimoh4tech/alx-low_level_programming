@@ -10,13 +10,13 @@
 
 int main(void)
 {
-char arr[] = "_putchar";
-int index;
+	char arr[] = "_putchar";
+	int index;
 
-for (index = 0; index < 8; index++)
-_putchar(arr[index]);
+	for (index = 0; index < 8; index++)
+		_putchar(arr[index]);
 
-_putchar('\n');
+	_putchar('\n');
 
-return (0);
+	return (0);
 }
