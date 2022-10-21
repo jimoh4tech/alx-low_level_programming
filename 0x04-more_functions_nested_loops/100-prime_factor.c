@@ -10,17 +10,18 @@
 
 int main(void)
 {
-long prime = 612852475143;
-int i;
-for (i = 2; i < prime; i++)
-{
-if (prime % i == 0)
-{
-prime /= i;
-i--;
-}
+	long prime = 612852475143;
+	int i;
 
-}
-printf("%d\n", i);
-return (0);
+	for (i = 2; i < prime; i++)
+	{
+		if (prime % i == 0)
+		{
+			prime /= i;
+			i--;
+		}
+
+	}
+	printf("%d\n", i);
+	return (0);
 }

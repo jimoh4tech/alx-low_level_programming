@@ -8,18 +8,19 @@
 
 void print_triangle(int size)
 {
-int i, j, k, count = 1;
-for (i = size; i > 0; i--)
-{
-for (j = 0; j < size - count; j++)
-_putchar(' ');
+	int i, j, k, count = 1;
 
-for (k = 0; k < count; k++)
-_putchar('#');
-++count;
-_putchar('\n');
-}
+	for (i = size; i > 0; i--)
+	{
+		for (j = 0; j < size - count; j++)
+			_putchar(' ');
 
-if (size < 1)
-_putchar('\n');
+		for (k = 0; k < count; k++)
+			_putchar('#');
+		++count;
+		_putchar('\n');
+	}
+
+	if (size < 1)
+		_putchar('\n');
 }
