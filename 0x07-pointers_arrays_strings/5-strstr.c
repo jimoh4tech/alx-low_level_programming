@@ -7,17 +7,17 @@
 
 int compare(const char *a, const char *b)
 {
-while (*a && *b)
-{
-if (*a != *b)
-{
-return (0);
-}
+	while (*a && *b)
+	{
+		if (*a != *b)
+		{
+			return (0);
+		}
 
-a++;
-b++;
-}
-return (*b == '\0');
+		a++;
+		b++;
+	}
+	return (*b == '\0');
 }
 
 /**
@@ -30,14 +30,14 @@ return (*b == '\0');
  */
 char *_strstr(char *haystack, char *needle)
 {
-while (*haystack != '\0')
-{
-if ((*haystack == *needle) && compare(haystack, needle))
-{
-return (haystack);
-}
-haystack++;
+	while (*haystack != '\0')
+	{
+		if ((*haystack == *needle) && compare(haystack, needle))
+		{
+			return (haystack);
+		}
+		haystack++;
 }
 
-return ('\0');
+	return ('\0');
 }
