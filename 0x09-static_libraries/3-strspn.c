@@ -7,17 +7,18 @@
 
 int _strspn(char *s, char *accept)
 {
-int i, j,  c = 0;
-for (i = 0; s[i] != '\0'; i++)
-{
-j = 0;
-while (accept[j] != s[i] && accept[j] != '\0')
-++j;
+	int i, j,  c = 0;
 
-if (accept[j] == s[i])
-++c;
-else
-break;
-}
-return (c);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		j = 0;
+		while (accept[j] != s[i] && accept[j] != '\0')
+			++j;
+
+		if (accept[j] == s[i])
+			++c;
+		else
+			break;
+	}
+	return (c);
 }
