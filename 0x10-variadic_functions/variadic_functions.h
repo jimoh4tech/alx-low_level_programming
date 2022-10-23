@@ -19,8 +19,8 @@ void print_all(const char * const format, ...);
 
 typedef struct print
 {
-char *format;
-void (*print_func)(va_list arg);
+	char *format;
+	void (*print_func)(va_list arg);
 } func_print;
 
 #endif /* VARIADIC_FUNCTION */
