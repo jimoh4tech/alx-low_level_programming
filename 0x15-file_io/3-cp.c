@@ -3,7 +3,7 @@
 #define MAXSIZE 1024
 
 /**
- * erorr_exit - prints error message and exit
+ * error_exit - prints error message and exit
  * @err: exit number
  * @str: name of the file
  * @fd: file descriptor
